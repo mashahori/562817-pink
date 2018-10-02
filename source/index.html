@@ -8,16 +8,16 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100"
-      width="150" height="100"  alt="Логотип приложения для фотографий Pink">
-    </a>
     <nav class="main-nav">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100"
+        width="150" height="100"  alt="Логотип приложения для фотографий Pink">
+      </a>
       <button class="main-nav__toggle" type="button">
-        Открыть меню
+        Кнопка меню
       </button>
       <ul class="main-nav__list list-hover">
-        <li class="list-hover__item list-hover--item-active">
+        <li class="list-hover__item list-hover__item--item-active">
           <a>Главная</a>
         </li>
         <li class="list-hover__item">
@@ -30,7 +30,6 @@
           <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
         </li>
       </ul>
-      <button class="main-nav__button button" type="button">Закрыть меню</button>
     </nav>
   </header>
   <main class="page-main">
@@ -41,13 +40,13 @@
         Скачать приложение
       </a>
       <ul class="download-list">
-        <li class="download-list__download-item download-item--apple">
+        <li class="download-list__item download-list__item--apple">
           <a href="#">Apple</a>
         </li>
-        <li class="download-list__download-item download-item--android">
+        <li class="download-list__item download-list__item--android">
           <a href="#">Android</a>
         </li>
-        <li class="download-list__download-item download-item--windows">
+        <li class="download-list__item download-list__item--windows">
           <a href="#">Windows</a>
         </li>
       </ul>
@@ -57,8 +56,8 @@
     </section>
     <section class="features">
       <h2 class="visually-hidden">Привлекательные возможности приложения</h2>
-      <b class="features__slogan">Устали от серости мегаполиса?</b>
-      <b class="features__slogan">Нам есть, что вам предложить!</b>
+      <p class="features__slogan">Устали от серости мегаполиса?</p>
+      <p class="features__slogan">Нам есть, что вам предложить!</p>
       <ul class="features-list advantages">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
@@ -88,28 +87,28 @@
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <ul class="reviews__list slider-list">
           <li class="reviews__item slider-item">
-            <b class="reviews__author">Николай Петров</b>
-            <p class="reviews__comment">
+            <cite class="reviews__author">Николай Петров</cite>
+            <blockquote class="reviews__comment">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей
               женой в комментариях к выложенной фотографии!»
-            </p>
+            </blockquote>
           </li>
           <li class="reviews__item slider-item">
-            <b class="reviews__author">Николай Петров</b>
-            <p class="reviews__comment">
+            <cite class="reviews__author">Николай Петров</cite>
+            <blockquote class="reviews__comment">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей
               женой в комментариях к выложенной фотографии!»
-            </p>
+            </blockquote>
           </li>
           <li class="reviews__item slider-item">
-            <b class="reviews__author">Николай Петров</b>
-            <p class="reviews__comment">
+            <cite class="reviews__author">Николай Петров</cite>
+            <blockquote class="reviews__comment">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей
               женой в комментариях к выложенной фотографии!»
-            </p>
+            </blockquote>
           </li>
         </ul>
         <p class="reviews__toggles slider__toggles">
@@ -122,7 +121,59 @@
     <section class="price">
       <h2 class="visually-hidden">Стоимость приложения</h2>
       <div class="price__wrapper slider">
-        <ul class="price__list slider-list">
+        <table class="price__table">
+          <tr class="price__tr">
+            <td class="price__td">
+            </td>
+            <th class="price__th">
+              <span class="price_value"></span>
+            </th>
+            <th class="price__th">
+              Стандарт
+              <span class="price_value">3,99 USD</span>
+            </th>
+            <th class="price__th">
+              <span class="price_value"></span>
+            </th>
+          </tr>
+          <tr class="price__tr">
+            <td class="price__point">
+              Розовый фильтр
+            </td>
+            <td class="price__td">
+            </td>
+            <td class="price__td">
+              Есть
+            </td>
+            <td class="price__td">
+            </td>
+          </tr>
+          <tr class="price__tr">
+            <td class="price__point">
+              Смайлики
+            </td>
+            <td class="price__td">
+            </td>
+            <td class="price__td">
+              Есть
+            </td>
+            <td class="price__td">
+            </td>
+          </tr>
+          <tr class="price__tr">
+            <td class="price__point">
+              Комментарии
+            </td>
+            <td class="price__td">
+            </td>
+            <td class="price__td">
+              Нет
+            </td>
+            <td class="price__td">
+            </td>
+          </tr>
+        </table>
+        <!-- <ul class="price__list slider-list">
           <li class="price__item slider-item">
             <h3 class="price__title">Стандарт</h3>
             <span class="price_value">3,99 USD</span>
@@ -168,12 +219,12 @@
               </li>
             </ul>
           </li>
-        </ul>
+        </ul> -->
       </div>
-      <p class="price__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+      <p class="price__toggles toggles">
+        <button class="toggles__button" type="button">1</button>
+        <button class="toggles__button" type="button">2</button>
+        <button class="toggles__button" type="button">3</button>
       </p>
     </section>
   </main>

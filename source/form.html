@@ -8,19 +8,19 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100"
-      width="150" height="100" alt="Логотип приложения для фотографий Pink">
-    </a>
     <nav class="main-nav">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100"
+        width="150" height="100" alt="Логотип приложения для фотографий Pink">
+      </a>
       <button class="main-nav__toggle" type="button">
-        Открыть меню
+        Кнопка меню
       </button>
       <ul class="main-nav__list list-hover">
         <li class="list-hover__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="list-hover__item list-hover--item-active">
+        <li class="list-hover__item list-hover__item--item-active">
           <a href="photo.html">Фотографии</a>
         </li>
         <li class="list-hover__item">
@@ -30,104 +30,106 @@
           <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
         </li>
       </ul>
-      <button class="main-nav__button button" type="button">Закрыть меню</button>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <p class="page-main__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз
       — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
-    <form class="page-main__form competion" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <ul class="competition__list name-list">
-          <li class="name-list__item">
-            <label>Фамилия:
-              <input type="text" name="surname" placeholder="Укажите фамилию *">
+    <form class="page-main__form competition" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="competition__fieldset">
+        <ul class="competition__list">
+          <li class="competition__item">
+            <label class="competition__label">Фамилия:
+              <input class="competition__input-text" type="text" name="surname" placeholder="Укажите фамилию *">
             </label>
           </li>
-          <li class="name-list__item">
-            <label>Имя:
-              <input type="text" name="name" placeholder="Введите ваше имя *">
+          <li class="competition__item">
+            <label class="competition__label">Имя:
+              <input class="competition__input-text" type="text" name="name" placeholder="Введите ваше имя *">
             </label>
           </li>
-          <li class="name-list__item">
-            <label>Отчество:
-              <input type="text" name="middle-name" placeholder="Ну и отчество тоже">
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend class="competition__title">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="competition__list achievments-list">
-          <li class="achievments-list__item">
-            <input type="checkbox" name="selfi-shark" id="selfi-shark">
-            <label for="selfi-shark">Сделал селфи с акулой</label>
-          </li>
-          <li class="achievments-list__item">
-            <input type="checkbox" name="sunbath" id="sunbath">
-            <label for="sunbath">Обгорел на пляже</label>
-          </li>
-          <li class="achievments-list__item">
-            <input type="checkbox" name="chuck-norris" id="chuck-norris">
-            <label for="chuck-norris">Видел Чака Норриса</label>
-          </li>
-          <li class="achievments-list__item">
-            <input type="checkbox" name='souvenirs' id="souvenirs">
-            <label for="souvenirs">Накупил сувениров</label>
-          </li>
-          <li class="achievments-list__item">
-            <input type="checkbox" name="tower" id="tower">
-            <label for="tower">Удержал башню</label>
-          </li>
-          <li class="achievments-list__item">
-            <input type="checkbox" name="hotel-destroy" id="hotel-destroy">
-            <label for="hotel-destroy">Разгромил отель</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <ul class="competition__list phone-adress">
-          <li class="phone-adress__item">
-            <label>Номер телефона
-              <input type="tel" name="phone-number" placeholder="Номер, пожалуйста">
-            </label>
-          </li>
-          <li class="phone-adress__item">
-            <label>Адрес почты
-              <input type="email" name="email" placeholder="Введите почту *">
+          <li class="competition__item">
+            <label class="competition__label">Отчество:
+              <input class="competition__input-text" type="text" name="middle-name" placeholder="Ну и отчество тоже">
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend class="competition__title">С каким приложением путешествовали?</legend>
-        <ul class="competition__list app-list">
-          <li class="app-list__item">
-            <input type="radio" name="app" value="ios" id="ios">
-            <label for="ios">Pink для iOS</label>
+      <fieldset class="competition__fieldset">
+        <legend class="competition__legend">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="competition__list">
+          <li class="competition__item">
+            <input class="competition__input-checkbox" type="checkbox" name="selfi-shark" id="selfi-shark">
+            <label class="competition__label-checkbox" for="selfi-shark">Сделал селфи с акулой</label>
           </li>
-          <li class="app-list__item">
-            <input type="radio" name="app" value="android" id="android">
-            <label for="android">Pink на Android</label>
+          <li class="competition__item">
+            <input class="competition__input-checkbox" type="checkbox" name="sunbath" id="sunbath">
+            <label class="competition__label-checkbox" for="sunbath">Обгорел на пляже</label>
           </li>
-          <li class="app-list__item">
-            <input type="radio" name="app" value="windows" id="windows">
-            <label for="windows">Windows Phone</label>
+          <li class="competition__item">
+            <input class="competition__input-checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+            <label class="competition__label-checkbox" for="chuck-norris">Видел Чака Норриса</label>
+          </li>
+          <li class="competition__item">
+            <input class="competition__input-checkbox" type="checkbox" name='souvenirs' id="souvenirs">
+            <label class="competition__label-checkbox" for="souvenirs">Накупил сувениров</label>
+          </li>
+          <li class="competition__item">
+            <input class="competition__input-checkbox" type="checkbox" name="tower" id="tower">
+            <label class="competition__label-checkbox" for="tower">Удержал башню</label>
+          </li>
+          <li class="competition__item">
+            <input class="competition__input-checkbox" type="checkbox" name="hotel-destroy" id="hotel-destroy">
+            <label class="competition__label-checkbox" for="hotel-destroy">Разгромил отель</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend class="competition__title">Опишите свои эмоции</legend>
-        <textarea class="competition__text"></textarea>
+      <fieldset class="competition__fieldset">
+        <ul class="competition__list">
+          <li class="competition__item">
+            <label class="competition__label">Номер телефона
+              <input class="competition__input-text" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+            </label>
+          </li>
+          <li class="competition__item">
+            <label class="competition__label">Адрес почты
+              <input class="competition__input-text" type="email" name="email" placeholder="Введите почту *">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="competition__fieldset">
+        <legend class="competition__legend">С каким приложением путешествовали?</legend>
+        <ul class="competition__list">
+          <li class="competition__item">
+            <input class="competition__input-radio" type="radio" name="app" value="ios" id="ios">
+            <label class="competition__label-radio" for="ios">Pink для iOS</label>
+          </li>
+          <li class="competition__item">
+            <input class="competition__input-radio" type="radio" name="app" value="android" id="android">
+            <label class="competition__label-radio" for="android">Pink на Android</label>
+          </li>
+          <li class="competition__item">
+            <input class="competition__input-radio" type="radio" name="app" value="windows" id="windows">
+            <label class="competition__label-radio" for="windows">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="competition__fieldset">
+        <legend class="competition__legend">Опишите свои эмоции</legend>
+        <textarea class="competition__textarea"></textarea>
       </fieldset>
       <input class="competition__send-form" type="submit" value="Отправить форму">
+      <p class="competition__required">* — обязательные поля</p>
     </form>
   </main>
   <footer class="page-footer">
     <h2 class="visually-hidden">Наши контакты</h2>
-    <img class="page-footer__logo" src="http://placehold.it/150x100"
-    width="150" height="100" alt="Логотип приложения для фотографий Pink">
+    <a class="page-footer__link" href="index.html">
+      <img class="page-footer__logo" src="http://placehold.it/150x100"
+      width="150" height="100" alt="Логотип приложения для фотографий Pink">
+    </a>
     <ul class="page-footer__social-list social">
       <li class="social__button social__button--twitter">
         Twitter

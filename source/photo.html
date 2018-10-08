@@ -4,46 +4,49 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100"
-        width="150" height="100"  alt="Логотип приложения для фотографий Pink">
+    <nav class="page-header__main-nav main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg"
+        width="75" height="23"  alt="Логотип приложения для фотографий Pink">
       </a>
       <button class="main-nav__toggle" type="button">
-        Кнопка меню
+        <span class="visually-hidden">Кнопка меню</span>
       </button>
       <ul class="main-nav__list list-hover">
         <li class="list-hover__item">
-          <a href="index.html">Главная</a>
+          <a class="list-hover__item-link" href="index.html">Главная</a>
         </li>
         <li class="list-hover__item list-hover__item--item-active">
-          <a>Фотографии</a>
+          <a class="list-hover__item-link">Фотографии</a>
         </li>
         <li class="list-hover__item">
-          <a href="form.html">Конкурс</a>
+          <a class="list-hover__item-link" href="form.html">Конкурс</a>
         </li>
         <li class="list-hover__item">
-          <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+          <a class="list-hover__item-link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Фотографии пользователей</h1>
-    <section class="photo-catalog">
+    <div class="page-main__title-wrapper">
+      <h1 class="page-main__title">Фотографии пользователей</h1>
+    </div>
+    <section class="page-main__photo-catalog photo-catalog">
       <p class="photo-catalog__slogan">
         Взгляните на фотографии, которые выкладывают пользователи! Видите,
         как не хватает ваших?
       </p>
-      <ul class="photo-catalog__album photo-list">
-        <li class="photo-list__item photo">
+      <ul class="photo-catalog__list">
+        <li class="photo-catalog__item photo">
           <a class="photo__link">
-            <img class="photo__picture" src="http://placehold.it/150x100"
-              width="150" height="100" alt="Фотография пользователя">
+            <img class="photo__picture" src="img/panorama-mobile@1x.jpg"
+              width="320" height="137" alt="Фотография пользователя">
           </a>
           <div class="photo__text-wrapper">
             <b class="photo__author">Анна</b>
@@ -53,12 +56,12 @@
             </p>
           </div>
           <button class="photo__like" type="button">Лайк</button>
-          <span class="photo_like-count">Нравится: 215</span>
+          <span class="photo__like-count">Нравится: 215</span>
         </li>
-        <li class="photo-list__item photo">
+        <li class="photo-catalog__item photo">
           <a class="photo__link">
-            <img class="photo__picture" src="http://placehold.it/150x100"
-              width="150" height="100" alt="Фотография пользователя">
+            <img class="photo__picture" src="img/photo-car-mobile@1x.jpg"
+              width="280" height="180" alt="Фотография пользователя">
           </a>
           <div class="photo__text-wrapper">
             <b class="photo__author">Левон</b>
@@ -68,12 +71,12 @@
             </p>
           </div>
           <button class="photo__like" type="button">Лайк</button>
-          <span class="photo_like-count">Нравится: 356</span>
+          <span class="photo__like-count">Нравится: 356</span>
         </li>
-        <li class="photo-list__item photo">
+        <li class="photo-catalog__item photo">
           <a class="photo__link">
-            <img class="photo__picture" src="http://placehold.it/150x100"
-              width="150" height="100" alt="Фотография пользователя">
+            <img class="photo__picture" src="img/photo-drumset-mobile@1x.jpg"
+              width="280" height="180" alt="Фотография пользователя">
           </a>
           <div class="photo__text-wrapper">
             <b class="photo__author">Антон</b>
@@ -82,12 +85,12 @@
             </p>
           </div>
           <button class="photo__like" type="button">Лайк</button>
-          <span class="photo_like-count">Нравится: 666</span>
+          <span class="photo__like-count">Нравится: 666</span>
         </li>
-        <li class="photo-list__item photo">
+        <li class="photo-catalog__item photo">
           <a class="photo__link">
-            <img class="photo__picture" src="http://placehold.it/150x100"
-              width="150" height="100" alt="Фотография пользователя">
+            <img class="photo__picture" src="img/photo-window-mobile@1x.jpg"
+              width="280" height="180" alt="Фотография пользователя">
           </a>
           <div class="photo__text-wrapper">
             <b class="photo__author">Баорис</b>
@@ -96,12 +99,12 @@
             </p>
           </div>
           <button class="photo__like" type="button">Лайк</button>
-          <span class="photo_like-count">Нравится: 215</span>
+          <span class="photo__like-count">Нравится: 215</span>
         </li>
-        <li class="photo-list__item photo">
+        <li class="photo-catalog__item photo">
           <a class="photo__link">
-            <img class="photo__picture" src="http://placehold.it/150x100"
-              width="150" height="100" alt="Фотография пользователя">
+            <img class="photo__picture" src="img/photo-fair-mobile@1x.jpg"
+              width="280" height="180" alt="Фотография пользователя">
           </a>
           <div class="photo__text-wrapper">
             <b class="photo__author">Сергей</b>
@@ -110,12 +113,12 @@
             </p>
           </div>
           <button class="photo__like" type="button">Лайк</button>
-          <span class="photo_like-count">Нравится: 4</span>
+          <span class="photo__like-count">Нравится: 4</span>
         </li>
-        <li class="photo-list__item photo">
+        <li class="photo-catalog__item photo">
           <a class="photo__link">
-            <img class="photo__picture" src="http://placehold.it/150x100"
-              width="150" height="100" alt="Фотография пользователя">
+            <img class="photo__picture" src="img/photo-pov-mobile@1x.jpg"
+              width="280" height="180" alt="Фотография пользователя">
           </a>
           <div class="photo__text-wrapper">
             <b class="photo__author">Максим</b>
@@ -124,12 +127,12 @@
             </p>
           </div>
           <button class="photo__like" type="button">Лайк</button>
-          <span class="photo_like-count">Нравится: 150</span>
+          <span class="photo__like-count">Нравится: 150</span>
         </li>
-        <li class="photo-list__item photo">
+        <li class="photo-catalog__item photo">
           <a class="photo__link">
-            <img class="photo__picture" src="http://placehold.it/150x100"
-              width="150" height="100" alt="Фотография пользователя">
+            <img class="photo__picture" src="img/photo-wing-mobile@1x.jpg"
+              width="280" height="180" alt="Фотография пользователя">
           </a>
           <div class="photo__text-wrapper">
             <b class="photo__author">Надежда</b>
@@ -138,40 +141,40 @@
             </p>
           </div>
           <button class="photo__like" type="button">Лайк</button>
-          <span class="photo_like-count">Нравится: 2560</span>
+          <span class="photo__like-count">Нравится: 2560</span>
         </li>
       </ul>
     </section>
     <section class="photo-editor">
-      <h2 class="visually-hidden">Обработать и загрузитьизображения</h2>
+      <h2 class="visually-hidden">Обработать и загрузить изображения</h2>
       <p class="photo-editor__slogan">Затмите их всех!
         Выкладывайте все, что накопилось в телефоне!
       </p>
       <form class="photo-editor__form" method="post" action="https://echo.htmlacademy.ru">
-        <img class="photo-editor__picture" src="http://placehold.it/150x100"
-          width="150" height="100"  alt="Фотография пользователя">
+        <img class="photo-editor__picture" src="img/photo-road-mobile@1x.jpg"
+          width="280" height="374"  alt="Фотография пользователя">
         <ul class="photo-editor__tool-list tools">
           <li class="tools__item tools__item--cropp">
             <button class="tools__button" type="button">Обрезка</button>
           </li>
-          <li class="tools__item tools__item--cropp">
+          <li class="tools__item tools__item--fill">
             <button class="tools__button" type="button">Заливка</button>
           </li>
-          <li class="tools__item tools__item--cropp">
+          <li class="tools__item tools__item--contrast">
             <button class="tools__button" type="button">Контрастность</button>
           </li>
         </ul>
         <input class="photo-editor__control" type="range">
         <button class="photo-editor__public-photo" type="submit">Запостить</button>
-        <button class="" type="reset">Отмена</button>
+        <button class="photo-editor__cancel-photo" type="reset">Отмена</button>
       </form>
     </section>
   </main>
   <footer class="page-footer">
     <h2 class="visually-hidden">Наши контакты</h2>
     <a class="page-footer__link" href="index.html">
-      <img class="page-footer__logo" src="http://placehold.it/150x100"
-      width="150" height="100" alt="Логотип приложения для фотографий Pink">
+      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg"
+      width="147" height="41" alt="Логотип приложения для фотографий Pink">
     </a>
     <ul class="page-footer__social-list social">
       <li class="social__button social__button--twitter">
@@ -187,8 +190,8 @@
     <p class="page-footer__copyright htmlacademy-copyright">
       Разработано
       <a class="htmlacademy-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="htmlacademy-copyright__logo" src="http://placehold.it/150x100"
-        width="150" height="100" alt="HTML Academy">
+        <img class="htmlacademy-copyright__logo" src="img/htmlacademy.svg"
+        width="415" height="526" alt="HTML Academy">
       </a>
     </p>
   </footer>

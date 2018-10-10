@@ -4,49 +4,52 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100"
-        width="150" height="100"  alt="Логотип приложения для фотографий Pink">
+    <nav class="page-header__main-nav main-nav">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg"
+        width="75" height="23"  alt="Логотип приложения для фотографий Pink">
       </a>
       <button class="main-nav__toggle" type="button">
-        Кнопка меню
+        <span class="visually-hidden">Кнопка меню</span>
       </button>
       <ul class="main-nav__list list-hover">
         <li class="list-hover__item list-hover__item--item-active">
-          <a>Главная</a>
+          <a class="list-hover__item-link">Главная</a>
         </li>
         <li class="list-hover__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="list-hover__item-link" href="photo.html">Фотографии</a>
         </li>
         <li class="list-hover__item">
-          <a href="form.html">Конкурс</a>
+          <a class="list-hover__item-link" href="form.html">Конкурс</a>
         </li>
         <li class="list-hover__item">
-          <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+          <a class="list-hover__item-link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Приложение для фотографий "Pink"</h1>
-    <section class="download-app">
+    <div class="page-main__title-wrapper-index">
+      <h1 class="visually-hidden">Приложение для фотографий "Pink"</h1>
+    </div>
+    <section class="page-main__download-app download-app">
       <h2 class="visually-hidden">О приложении</h2>
       <a class="download-app__link download-link" href="#">
         Скачать приложение
       </a>
-      <ul class="download-list">
-        <li class="download-list__item download-list__item--apple">
+      <ul class="download-app__list">
+        <li class="download-app__item download-app__item--apple">
           <a href="#">Apple</a>
         </li>
-        <li class="download-list__item download-list__item--android">
+        <li class="download-app__item download-app__item--android">
           <a href="#">Android</a>
         </li>
-        <li class="download-list__item download-list__item--windows">
+        <li class="download-app__item download-app__item--windows">
           <a href="#">Windows</a>
         </li>
       </ul>
@@ -58,7 +61,7 @@
       <h2 class="visually-hidden">Привлекательные возможности приложения</h2>
       <p class="features__slogan">Устали от серости мегаполиса?</p>
       <p class="features__slogan">Нам есть, что вам предложить!</p>
-      <ul class="features-list advantages">
+      <ul class="features__list advantages">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">
@@ -132,14 +135,14 @@
             <td class="price__td">
             </td>
             <th class="price__th">
-              <span class="price_value"></span>
+              <span class="price__value"></span>
             </th>
             <th class="price__th">
               Стандарт
-              <span class="price_value">3,99 USD</span>
+              <span class="price__value">3,99 USD</span>
             </th>
             <th class="price__th">
-              <span class="price_value"></span>
+              <span class="price__value"></span>
             </th>
           </tr>
           <tr class="price__tr">
@@ -188,28 +191,28 @@
     </section>
   </main>
   <footer class="index-footer">
-    <section class="contacts">
+    <section class="index-footer__contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="contacts__info info">
-        <p class="info__title">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class='info__list contacts-list'>
-          <li class="contacts-list__item">
-            <b class="contacts-list__title">Звоните:</b>
-            <span class="contacts-list__info">+7 (812) 555-66-66</span>
+      <div class="index-footer__info info">
+        <p class="info__ask">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class='info__list'>
+          <li class="info__item">
+            <b class="info__title">Звоните:</b>
+            <span class="info__contacts">+7 (812) 555-66-66</span>
           </li>
-          <li class="contacts-list__item">
-            <b class="contacts-list__title">Пишите:</b>
-            <span class="contacts-list__info">mail@htmlacademy.ru</span>
+          <li class="info__item">
+            <b class="info__title">Пишите:</b>
+            <span class="info__contacts">mail@htmlacademy.ru</span>
           </li>
-          <li class="contacts-list__item">
-            <b class="contacts-list__title">Приезжайте в гости:</b>
-            <span class="contacts-list__info">ул. Большая Конюшенная, 19/8</span>
+          <li class="info__item">
+            <b class="info__title">Приезжайте в гости:</b>
+            <span class="info__contacts">ул. Большая Конюшенная, 19/8</span>
           </li>
         </ul>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-image" src="http://placehold.it/150x100"
-        width="150" height="100" alt="Карта">
+        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png"
+        width="320" height="645" alt="Карта">
       </div>
     </section>
   </footer>

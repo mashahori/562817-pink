@@ -4,11 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
+    <div class="site-container">
     <nav class="page-header__main-nav main-nav">
       <a class="main-nav__logo" href="index.html">
         <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg"
@@ -32,16 +36,21 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
   <main class="page-main">
     <div class="page-main__title-wrapper">
+      <div class="site-container">
       <h1 class="page-main__title">Фотографии пользователей</h1>
+      </div>
     </div>
     <section class="page-main__photo-catalog photo-catalog">
-      <p class="photo-catalog__slogan">
+      <h2 class="visually-hidden">Каталог фотографий</h2>
+      <div class="site-container">
+        <p class="photo-catalog__slogan">
         Взгляните на фотографии, которые выкладывают пользователи! Видите,
         как не хватает ваших?
-      </p>
+        </p>
       <ul class="photo-catalog__list">
         <li class="photo-catalog__item photo">
           <a class="photo__link">
@@ -144,8 +153,10 @@
           <span class="photo__like-count">Нравится: 2560</span>
         </li>
       </ul>
+    </div>
     </section>
     <section class="photo-editor">
+      <div class="site-container">
       <h2 class="visually-hidden">Обработать и загрузить изображения</h2>
       <p class="photo-editor__slogan">Затмите их всех!
         Выкладывайте все, что накопилось в телефоне!
@@ -153,23 +164,30 @@
       <form class="photo-editor__form" method="post" action="https://echo.htmlacademy.ru">
         <img class="photo-editor__picture" src="img/photo-road-mobile@1x.jpg"
           width="280" height="374"  alt="Фотография пользователя">
+          <div class="photo-editor__tools-wrapper">
         <ul class="photo-editor__tool-list tools">
           <li class="tools__item tools__item--cropp">
             <button class="tools__button" type="button">Обрезка</button>
+            <input class="photo-editor__hidden-control" type="range">
           </li>
           <li class="tools__item tools__item--fill">
             <button class="tools__button" type="button">Заливка</button>
+            <input class="photo-editor__hidden-control" type="range">
           </li>
           <li class="tools__item tools__item--contrast">
             <button class="tools__button" type="button">Контрастность</button>
+            <input class="photo-editor__hidden-control" type="range">
           </li>
         </ul>
         <input class="photo-editor__control" type="range">
         <button class="photo-editor__public-photo" type="submit">Запостить</button>
         <button class="photo-editor__cancel-photo" type="reset">Отмена</button>
+        </div>
       </form>
+    </div>
     </section>
   </main>
+  <div class="site-container">
   <footer class="page-footer">
     <h2 class="visually-hidden">Наши контакты</h2>
     <a class="page-footer__link" href="index.html">
@@ -195,7 +213,7 @@
       </a>
     </p>
   </footer>
-
+</div>
 </body>
 
 </html>

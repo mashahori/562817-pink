@@ -1,0 +1,36 @@
+.feature-note {
+  display: none;
+  position: relative;
+  min-height: 346px;
+  padding-left: 310px;
+  // // &::before {
+  // //   content: "";
+  // //   position: absolute;
+  // //   width: 298px;
+  // //   height: 346px;
+  // //   background: url("/../../img/icon-timer.svg");
+  // //   left: 0;
+  // }
+}
+
+@media (min-width: @tablet-width) {
+  .feature-note {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature-note {
+    padding-left: 370px;
+  }
+}
+
+.feature-note__title {
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.feature-note__link {
+  color: #d22856;
+}

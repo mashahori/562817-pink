@@ -1,6 +1,10 @@
 .list-hover {
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .list-hover__item-link {
@@ -9,4 +13,12 @@
   font-size: 18px;
   line-height: 32px;
   text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .list-hover {
+    width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

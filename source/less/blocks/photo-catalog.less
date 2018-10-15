@@ -1,5 +1,5 @@
 .photo-catalog {
-  padding: 52px 20px 0;
+  padding-top: 52px;
 }
 
 .photo-catalog__slogan {
@@ -8,8 +8,28 @@
 
 .photo-catalog__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .photo-catalog__item {
-  background-color: #f2f2f2;
+  width: 280px;
+
+  &:first-child {
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo-catalog__item {
+    width: 300px;
+  }
 }

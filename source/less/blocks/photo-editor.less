@@ -1,5 +1,6 @@
 .photo-editor {
-  padding: 46px 20px 40px;
+  padding-top: 46px;
+  padding-bottom: 40px;
 }
 
 .photo-editor__slogan {
@@ -22,4 +23,28 @@
   font-size: 18px;
   line-height: 18px;
   color: rgba(40, 54, 69, 0.1);
+}
+
+.photo-editor__hidden-control {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-editor__form {
+    display: flex;
+  }
+
+  .photo-editor__hidden-control {
+    display: block;
+  }
+
+  .photo-editor__control {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-editor__form {
+    padding: 56px 60px 80px;
+  }
 }

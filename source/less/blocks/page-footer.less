@@ -1,7 +1,15 @@
 .page-footer {
-  padding: 40px 72px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .page-footer__copyright {
   line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }

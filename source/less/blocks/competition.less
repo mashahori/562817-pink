@@ -1,5 +1,7 @@
 .competition__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .competition__label {
@@ -11,6 +13,10 @@
   color: #d22856;
   text-transform: uppercase;
   line-height: 18px;
+}
+
+.competition__legend--hidden {
+  display: none;
 }
 
 .competition__label-checkbox,
@@ -41,4 +47,58 @@
 
 .competition__required-star {
   color: #d22856;
+}
+
+.competition__fieldset {
+  border: none;
+}
+
+.competition__fieldset--achievments,
+.competition__fieldset--app {
+  background-color: @gray;
+}
+
+@media (min-width: @tablet-width) {
+  .competition {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .competition__legend--hidden {
+    display: block;
+  }
+
+  .competition__fieldset--app {
+    order: -4;
+    background-color: #ffffff;
+  }
+
+  .competition__fieldset--achievments {
+    background-color: #ffffff;
+  }
+
+  .competition__fieldset--contacts {
+    order: -3;
+  }
+
+  .competition__fieldset--name {
+    order: -5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .competition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .competition__fieldset {
+    width: 100%;
+  }
+
+  .competition__fieldset--name,
+  .competition__fieldset--app {
+    width: 450px;
+  }
 }

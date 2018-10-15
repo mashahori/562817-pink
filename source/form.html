@@ -4,14 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"
+    <div class="site-container">
+    <nav class="page-header__main-nav main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg"
         width="75" height="23" alt="Логотип приложения для фотографий Pink">
       </a>
       <button class="main-nav__toggle" type="button">
@@ -32,15 +36,19 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
   <main class="page-main">
     <div class="page-main__title-wrapper">
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="site-container">
+        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </div>
+    <div class="site-container">
     <p class="page-main__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз
       — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
     <form class="page-main__form competition" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="competition__fieldset">
+      <fieldset class="competition__fieldset competition__fieldset--name">
         <ul class="competition__list">
           <li class="competition__item">
             <label class="competition__label">Фамилия:
@@ -59,7 +67,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="competition__fieldset">
+      <fieldset class="competition__fieldset competition__fieldset--achievments">
         <legend class="competition__legend">Ваши безбашенные достижения в путешествии</legend>
         <ul class="competition__list">
           <li class="competition__item">
@@ -88,7 +96,8 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="competition__fieldset">
+      <fieldset class="competition__fieldset competition__fieldset--contacts">
+        <legend class="competition__legend competition__legend--hidden">Контактная информация</legend>
         <ul class="competition__list">
           <li class="competition__item">
             <label class="competition__label">Номер телефона
@@ -102,7 +111,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="competition__fieldset">
+      <fieldset class="competition__fieldset competition__fieldset--app">
         <legend class="competition__legend">С каким приложением путешествовали?</legend>
         <ul class="competition__list">
           <li class="competition__item">
@@ -128,7 +137,9 @@
         <span class="competition__required-star">*</span> — обязательные поля
       </p>
     </form>
+  </div>
   </main>
+  <div class="site-container">
   <footer class="page-footer">
     <h2 class="visually-hidden">Наши контакты</h2>
     <a class="page-footer__link" href="index.html">
@@ -154,7 +165,7 @@
       </a>
     </p>
   </footer>
-
+</div>
 </body>
 
 </html>

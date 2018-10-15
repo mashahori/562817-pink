@@ -1,0 +1,24 @@
+.main-nav {
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__logo {
+  height: 23px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__logo {
+    height: 41px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

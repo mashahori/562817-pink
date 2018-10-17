@@ -6,16 +6,32 @@
 
 .main-nav__logo {
   height: 23px;
+  margin-top: 23px;
+}
+
+.main-nav__logo-image {
+  width: 75px;
+  height: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__logo {
+    height: 41px;
+    width: 150px;
+  }
+
+  .main-nav__logo-image {
+    display: block;
+    height: auto;
+    width: 150px;
+    margin-top: 27px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .main-nav__logo {
-    height: 41px;
   }
 
   .main-nav__toggle {

@@ -7,6 +7,12 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: #1d2631;
+  background-size: cover;
+  min-height: 670px;
+}
+
+.download-app__list-wrapper {
+  background-color: #1d2631;
 }
 
 .download-app__link {
@@ -44,14 +50,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .download-app {
+    min-height: 620px;
+  }
+
   .download-app__list-wrapper {
     position: absolute;
     top: 0;
     left: 0;
+    background-color: transparent;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .download-app {
+    min-height: 747px;
+  }
+
   .download-app__list-wrapper {
     position: absolute;
     top: 0;

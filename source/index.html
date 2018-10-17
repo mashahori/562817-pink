@@ -4,11 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
+    <div class="site-container">
     <nav class="page-header__main-nav main-nav">
       <a class="main-nav__logo">
         <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg"
@@ -32,13 +36,16 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
   <main class="page-main">
-    <div class="page-main__title-wrapper-index">
       <h1 class="visually-hidden">Приложение для фотографий "Pink"</h1>
-    </div>
     <section class="page-main__download-app download-app">
-      <h2 class="visually-hidden">О приложении</h2>
+      <div class="site-container">
+      <div class="page-main__title-wrapper-index">
+        <h2 class="visually-hidden">О приложении</h2>
+      </div>
+      <div class="download-app__list-wrapper">
       <a class="download-app__link download-link" href="#">
         Скачать приложение
       </a>
@@ -56,11 +63,15 @@
       <p class="download-app__description">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
+    </div>
+  </div>
     </section>
     <section class="features">
+      <div class="site-container">
       <h2 class="visually-hidden">Привлекательные возможности приложения</h2>
       <p class="features__slogan">Устали от серости мегаполиса?</p>
       <p class="features__slogan">Нам есть, что вам предложить!</p>
+      <div class="features__wrapper">
       <ul class="features__list advantages">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
@@ -84,14 +95,30 @@
           </p>
         </li>
       </ul>
+      <div class="features__image">
+      </div>
+    </div>
+    <article class="features__hidden-feature feature-note">
+      <h2 class="feature-note__title">Эффект на 24 часа!</h2>
+      <p class="feature-note__text">
+        Британские ученые провели исследования
+        и доказали, что положительный эффект
+        от использования приложения длится
+        целые сутки!
+      </p>
+      <a class="feature-note__link" href="#">Узнать больше об исследовании</a>
+    </article>
+    </div>
     </section>
     <section class="reviews">
+      <div class="site-container">
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <ul class="reviews__list slider-list">
           <li class="reviews__item slider-item">
             <blockquote class="reviews__comment">
               <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__hidden-note">25 лет, водитель трамвая</p>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть
                 на привычные серые вещи! А еще я познакомился со своей будущей
@@ -102,6 +129,7 @@
           <li class="reviews__item slider-item">
             <blockquote class="reviews__comment">
               <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__hidden-note">25 лет, водитель трамвая</p>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть
                 на привычные серые вещи! А еще я познакомился со своей будущей
@@ -112,6 +140,7 @@
           <li class="reviews__item slider-item">
             <blockquote class="reviews__comment">
               <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__hidden-note">25 лет, водитель трамвая</p>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть
                 на привычные серые вещи! А еще я познакомился со своей будущей
@@ -126,59 +155,69 @@
           <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
+    </div>
     </section>
     <section class="price">
       <h2 class="visually-hidden">Стоимость приложения</h2>
+      <div class="site-container">
       <div class="price__wrapper slider">
         <table class="price__table">
           <tr class="price__tr">
             <td class="price__td">
             </td>
-            <th class="price__th">
-              <span class="price__value"></span>
+            <th class="price__th price__hidden">
+              База
+              <span class="price__value">1,99 USD</span>
             </th>
             <th class="price__th">
               Стандарт
               <span class="price__value">3,99 USD</span>
             </th>
-            <th class="price__th">
-              <span class="price__value"></span>
+            <th class="price__th price__hidden">
+              Анлим
+              <span class="price__value">9,99 USD</span>
             </th>
           </tr>
           <tr class="price__tr">
             <td class="price__point">
               Розовый фильтр
             </td>
-            <td class="price__td">
+            <td class="price__td price__hidden">
+              Есть
             </td>
             <td class="price__td">
               Есть
             </td>
-            <td class="price__td">
+            <td class="price__td price__hidden">
+              Есть
             </td>
           </tr>
           <tr class="price__tr">
             <td class="price__point">
               Смайлики
             </td>
-            <td class="price__td">
+            <td class="price__td price__hidden">
+              Нет
             </td>
             <td class="price__td">
               Есть
             </td>
-            <td class="price__td">
+            <td class="price__td price__hidden">
+              Есть
             </td>
           </tr>
           <tr class="price__tr">
             <td class="price__point">
               Комментарии
             </td>
-            <td class="price__td">
+            <td class="price__td price__hidden">
+              Нет
             </td>
             <td class="price__td">
               Нет
             </td>
-            <td class="price__td">
+            <td class="price__td price__hidden">
+              Есть
             </td>
           </tr>
         </table>
@@ -188,11 +227,13 @@
         <button class="toggles__button" type="button">2</button>
         <button class="toggles__button" type="button">3</button>
       </p>
+    </div>
     </section>
   </main>
   <footer class="index-footer">
     <section class="index-footer__contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="site-container">
       <div class="index-footer__info info">
         <p class="info__ask">Остались вопросы? Свяжитесь с нами!</p>
         <ul class='info__list'>
@@ -210,11 +251,39 @@
           </li>
         </ul>
       </div>
+      </div>
       <div class="contacts__map">
         <img class="contacts__map-image" src="img/bg-map-mobile@1x.png"
         width="320" height="645" alt="Карта">
       </div>
     </section>
+    <div class="site-container">
+    <section class="index-footer__hidden page-footer ">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <a class="page-footer__link" href="index.html">
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg"
+        width="147" height="41" alt="Логотип приложения для фотографий Pink">
+      </a>
+      <ul class="page-footer__social-list social">
+        <li class="social__button social__button--twitter">
+          Twitter
+        </li>
+        <li class="social__button social__button--facebook">
+          Facebook
+        </li>
+        <li class="social__button social__button--youtube">
+          Youtube
+        </li>
+      </ul>
+      <p class="page-footer__copyright htmlacademy-copyright">
+        Разработано
+        <a class="htmlacademy-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="htmlacademy-copyright__logo" src="img/htmlacademy.svg"
+          width="27" height="34" alt="HTML Academy">
+        </a>
+      </p>
+    </section>
+  </div>
   </footer>
 
 </body>

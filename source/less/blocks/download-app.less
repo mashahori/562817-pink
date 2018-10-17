@@ -1,7 +1,17 @@
 .download-app {
-  padding: 28px 20px 34px;
+  padding-top: 28px;
+  padding-bottom: 34px;
   text-align: center;
   color: #ffffff;
+  background: url("/../../img/bg-back-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: #1d2631;
+  background-size: cover;
+  min-height: 670px;
+}
+
+.download-app__list-wrapper {
   background-color: #1d2631;
 }
 
@@ -15,6 +25,10 @@
 
 .download-app__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .download-app__item--apple {
@@ -33,4 +47,29 @@
   background-image: url("/../../img/logo-microsoft.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app {
+    min-height: 620px;
+  }
+
+  .download-app__list-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app {
+    min-height: 747px;
+  }
+
+  .download-app__list-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

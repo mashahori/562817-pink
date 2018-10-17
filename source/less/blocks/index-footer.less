@@ -1,4 +1,16 @@
 .index-footer {
   background-color: #ffffff;
-  padding: 46px 38px 44px 72px;
+  padding-top: 46px;
+  padding-bottom: 44px;
+}
+
+.index-footer__hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .index-footer__hidden {
+    display: flex;
+    justify-content: space-between;
+  }
 }

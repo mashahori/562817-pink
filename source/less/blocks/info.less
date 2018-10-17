@@ -5,6 +5,15 @@
 
 .info__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.info__item {
+  width: 280px;
 }
 
 .info__title {
@@ -15,4 +24,14 @@
 .info__contacts {
   color: #d22856;
   font-size: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .info__list {
+    flex-direction: row;
+  }
+
+  .info__item {
+    width: 320px;
+  }
 }

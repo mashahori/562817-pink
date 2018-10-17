@@ -1,6 +1,6 @@
 .features {
-  padding: 46px 30px 345px;
-  background-color: #ffffff;
+  padding-top: 46px;
+  background-color: #f2f2f2;
 }
 
 .features__slogan {
@@ -10,4 +10,40 @@
 .features__list {
   background-color: #f2f2f2;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__image {
+  background: url("/../../img/iphone-screen-mobile@1x.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 157px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__wrapper {
+    display: flex;
+  }
+
+  .features__image {
+    order: -1;
+  }
+
+  .features__list {
+    width: 310px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__image {
+    display: none;
+  }
+
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
 }

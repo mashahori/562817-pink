@@ -1,21 +1,22 @@
 .social {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
 }
 
-.social__button--twitter {
-  background-image: url("/../../img/icon-twitter.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
+.social__button a {
+  display: block;
+  padding: 10px 12px 12px 13px;
+  border: 3px solid @gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
 
-.social__button--facebook {
-  background-image: url("/../../img/icon-facebook.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.social__button--youtube {
-  background-image: url("/../../img/icon-youtube.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  path {
+    fill: @pink;
+  }
 }

@@ -1,6 +1,5 @@
 .download-app {
-  padding-top: 28px;
-  padding-bottom: 34px;
+  padding-top: 110px;
   text-align: center;
   color: #ffffff;
   background: url("/../../img/bg-back-mobile@1x.jpg");
@@ -8,27 +7,48 @@
   background-repeat: no-repeat;
   background-color: #1d2631;
   background-size: cover;
-  min-height: 670px;
+  position: relative;
+}
+
+.download-app__site-container {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .download-app__list-wrapper {
   background-color: #1d2631;
+  padding-top: 28px;
+  padding-bottom: 36px;
 }
 
 .download-app__link {
+  display: block;
+  padding: 17px 36px 19px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700px;
   color: #ffffff;
   text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 40px;
+  margin-bottom: 32px;
 }
 
 .download-app__list {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 205px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+}
+
+.download-app__item {
+  height: 56px;
+  width: 47px;
 }
 
 .download-app__item--apple {
@@ -41,35 +61,88 @@
   background-image: url("/../../img/logo-android.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  height: 47px;
+  width: 43px;
 }
 
 .download-app__item--windows {
   background-image: url("/../../img/logo-microsoft.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  height: 41px;
+  width: 44px;
+}
+
+.download-app__text-hidden {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .download-app {
-    min-height: 620px;
+    background: url("/../../img/bg-back-tablet@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
   }
 
   .download-app__list-wrapper {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 102px;
+    left: 20px;
     background-color: transparent;
+  }
+
+  .download-app__site-container {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .download-app__link {
+    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 46px;
+  }
+
+  .download-app__list {
+    margin-left: 46px;
+    margin-bottom: 42px;
+  }
+
+  .download-app__description {
+    margin-left: 0;
+    width: 300px;
+  }
+
+  .download-app__text-hidden {
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    margin-left: 58px;
+    width: 188px;
+    margin-bottom: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .download-app {
-    min-height: 747px;
+    padding-top: 210px;
+    background: url("/../../img/bg-back-desktop@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: flex;
   }
 
   .download-app__list-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: static;
+  }
+
+  .download-app__site-container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
   }
 }

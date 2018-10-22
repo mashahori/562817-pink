@@ -8,6 +8,12 @@
 }
 
 .list-hover__item-link {
+  display: block;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
@@ -15,10 +21,23 @@
   text-decoration: none;
 }
 
+// @media (min-width: @tablet-width) {
+//   .list-hover {
+//   }
+// }
+
 @media (min-width: @desktop-width) {
   .list-hover {
     width: 620px;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .list-hover__item-link {
+    border: none;
+    font-weight: 500;
+    text-transform: none;
   }
 }

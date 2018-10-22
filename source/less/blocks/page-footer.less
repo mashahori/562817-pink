@@ -5,11 +5,33 @@
 
 .page-footer__copyright {
   line-height: 18px;
+  margin: 0;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-footer-copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  path {
+    fill: @pink;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__copyright {
+    font-size: 18px;
   }
 }

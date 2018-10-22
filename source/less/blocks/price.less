@@ -6,7 +6,7 @@
 }
 
 .price__table {
-  background-color: #ffffff;
+  border-collapse: collapse;
 }
 
 .price__th {
@@ -15,6 +15,10 @@
   font-weight: 700;
   color: #ffffff;
   background-color: #283645;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  text-align: center;
+  height: 80px;
 }
 
 .price__value {
@@ -26,11 +30,23 @@
 .price__point {
   line-height: 30px;
   background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  vertical-align: middle;
+  text-align: center;
+  width: 280px;
 }
 
 .price__td {
   background-color: #ffffff;
   line-height: 30px;
+  border: 2px solid #e5e5e5;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.price__empty-td {
+  background-color: @gray;
+  border: none;
 }
 
 .price__hidden {
@@ -39,6 +55,51 @@
 
 @media (min-width: @tablet-width) {
   .price__hidden {
-    display: block;
+    display: table-cell;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+
+  .price__td,
+  .price__point {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+    width: 155px;
+    height: 45px;
+  }
+
+  .price__th {
+    font-size: 16px;
+    padding: 20px 35px;
+  }
+
+  .price__value {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__table {
+    width: 940px;
+  }
+
+  .price__th {
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 18px;
+  }
+
+  .price__value {
+    font-size: 24px;
+  }
+
+  .price__td,
+  .price__point {
+    font-size: 18px;
+    height: 60px;
+    width: 235px;
   }
 }

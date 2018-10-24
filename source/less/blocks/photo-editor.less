@@ -1,14 +1,27 @@
 .photo-editor {
-  padding-top: 46px;
-  padding-bottom: 40px;
 }
 
 .photo-editor__slogan {
   line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  &:last-of-type {
+    margin-bottom: 46px;
+  }
+}
+
+.photo-editor__picture {
+  margin-bottom: 40px;
+}
+
+.photo-editor__form-wrapper {
+  background-color: @gray;
 }
 
 .photo-editor__form {
-  background-color: #f2f2f2;
+  padding-top: 20px;
 }
 
 .photo-editor__public-photo {
@@ -16,6 +29,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  border: 3px solid @pink;
+  padding: 15px 90px 18px;
+  border-radius: 30px;
+  background: none;
+  margin-bottom: 12px;
 }
 
 .photo-editor__cancel-photo {
@@ -23,28 +41,98 @@
   font-size: 18px;
   line-height: 18px;
   color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  padding: 15px 100px 18px;
+  border-radius: 30px;
+  background: none;
+  margin-bottom: 40px
 }
 
-.photo-editor__hidden-control {
-  display: none;
+.photo-editor__range-control {
+  padding: 7px 20px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.photo-editor__scale {
+  height: 2px;
+  background-color: #283645;
+}
+
+.photo-editor__toggle {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  height: 16px;
+  width: 14px;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .photo-editor__form {
+    padding-top: 60px;
     display: flex;
+    justify-content: space-between;
+  }
+
+  .photo-editor__form-wrapper {
+    padding-bottom: 55px;
   }
 
   .photo-editor__hidden-control {
     display: block;
+    width: 202px;
   }
 
-  .photo-editor__control {
+  .photo-editor__picture {
+    min-width: 300px;
+    min-height: 400px;
+    margin-right: 45px;
+    margin-bottom: 0;
+  }
+
+  .photo-editor__hidden {
     display: none;
+  }
+
+  .photo-editor__public-photo {
+    margin-bottom: 24px;
+  }
+
+  .photo-editor__cancel-photo {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-editor__form {
-    padding: 56px 60px 80px;
+    padding: 56px 60px 60px 80px;
+    background-color: @gray;
+  }
+
+  .photo-editor__form-wrapper {
+    background-color: #ffffff;
+  }
+
+  .photo-editor__tools-wrapper {
+    width: 410px;
+  }
+
+  .photo-editor__picture {
+    margin-right: 90px;
+  }
+
+  .photo-editor__public-photo {
+    padding-left: 44px;
+    padding-right: 38px;
+    margin-bottom: 0;
+    margin-right: 45px;
+  }
+
+  .photo-editor__cancel-photo {
+    padding-left: 56px;
+    padding-right: 51px;
   }
 }

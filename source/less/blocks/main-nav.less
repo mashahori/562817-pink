@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  margin-bottom: 36px;
 }
 
 .main-nav__wrapper {
@@ -77,6 +78,10 @@
 
 
 @media (min-width: @tablet-width) {
+  .main-nav {
+    margin-bottom: 80px;
+  }
+
   .main-nav__logo {
     height: 41px;
     width: 150px;
@@ -117,11 +122,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 940px;
     left: 50%;
     padding: 0 10px;
     margin-left: -470px;
+    margin-bottom: 70px;
   }
 
   .main-nav__logo-wrapper {

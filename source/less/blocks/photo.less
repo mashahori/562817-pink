@@ -1,5 +1,8 @@
 .photo__author {
   font-weight: 700;
+  margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .photo__time {
@@ -16,4 +19,48 @@
 
 .photo__text-wrapper {
   background-color: @gray;
+  padding: 22px 22px 25px 20px;
+}
+
+.photo__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.photo__like {
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: center;
+  margin-right: 19px;
+
+  path {
+    fill: @pink;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__text-wrapper {
+    position: relative;
+  }
+
+  .photo {
+    &:first-child {
+      width: 620px;
+    }
+}
+    .photo__text-wrapper:first-child .photo__like-wrapper {
+        position: absolute;
+        top: 8px;
+        right: 30px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    &:first-child {
+      width: 940px;
+    }
+}
 }

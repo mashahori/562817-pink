@@ -12,30 +12,32 @@
 
 <body>
   <header class="page-header">
-    <div class="main-nav__wrapper">
     <nav class="page-header__main-nav main-nav">
-      <a class="main-nav__logo" href="index.html">
+      <div class="main-nav__logo-wrapper">
+      <a class="main-nav__logo">
         <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg"
-        width="75" height="23" alt="Логотип приложения для фотографий Pink">
+        width="75" height="23"  alt="Логотип приложения для фотографий Pink">
       </a>
+    </div>
+      <div class="main-nav__wrapper main-nav__wrapper--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Кнопка меню</span>
       </button>
-    </div>
       <ul class="main-nav__list list-hover">
         <li class="list-hover__item">
-          <a class="list-hover__item-link" href="index.html">Главная</a>
-        </li>
-        <li class="list-hover__item list-hover__item--item-active">
-          <a class="list-hover__item-link" href="photo.html">Фотографии</a>
+          <a class="list-hover__item-link"  href="index.html">Главная</a>
         </li>
         <li class="list-hover__item">
+          <a class="list-hover__item-link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="list-hover__item list-hover__item--item-active">
           <a class="list-hover__item-link">Конкурс</a>
         </li>
         <li class="list-hover__item">
-          <a class="list-hover__item-link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+          <a class="list-hover__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
+      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -166,6 +168,7 @@
     </p>
   </footer>
 </div>
+<script src='js/script.js'></script>
 </body>
 
 </html>

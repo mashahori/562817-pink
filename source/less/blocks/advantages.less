@@ -1,5 +1,6 @@
 .advantages__item {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .advantages__title {
@@ -7,22 +8,28 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .advantages__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item {
+    text-align: left;
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__item {
     width: 240px;
-    min-height: 560px;
     background: url("/../../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
+    padding-top: 355px;
   }
 
   .advantages__item--pink {
@@ -38,6 +45,15 @@
   }
 
   .advantages__title {
-    margin-top: 355px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }

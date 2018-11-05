@@ -1,8 +1,6 @@
 .photo__author {
   font-weight: 700;
-  margin-bottom: 10px;
   margin: 0;
-  margin-bottom: 10px;
 }
 
 .photo__time {
@@ -15,17 +13,22 @@
   color: #d22856;
   font-size: 12px;
   text-transform: uppercase;
+  line-height: 24px;
+}
+
+.photo:first-child .photo__text-wrapper {
+  padding: 18px 20px 20px 19px;
 }
 
 .photo__text-wrapper {
   background-color: @gray;
-  padding: 22px 22px 25px 20px;
+  padding: 10px 20px 20px 19px;
 }
 
 .photo__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 
 .photo__like {
@@ -33,16 +36,23 @@
   border: none;
   background: none;
   text-align: center;
-  margin-right: 19px;
+  margin-right: 15px;
+}
 
-  path {
-    fill: @pink;
-  }
+.photo__svg-like {
+  fill: @pink;
+}
+
+.photo__like-wrapper {
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .photo__text-wrapper {
     position: relative;
+    padding: 17px 18px 22px 27px;
+    box-sizing: border-box;
+    min-height: 40px;
   }
 
   .photo {
@@ -52,8 +62,38 @@
 }
     .photo__text-wrapper:first-child .photo__like-wrapper {
         position: absolute;
-        top: 8px;
-        right: 30px;
+        top: 25px;
+        right: 15px;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 135px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        & .photo__like {
+          margin-left: 10px;
+        }
+
+        & .photo__description {
+          min-height: auto;
+        }
+    }
+
+    .photo:first-child .photo__text-wrapper {
+      padding: 25px 20px 9px 27px;
+    }
+
+    .photo__description {
+      min-height: 48px;
+      padding-bottom: 12px;
+      margin-bottom: 0;
+    }
+
+    .photo__like-wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      flex-wrap: nowrap;
     }
 }
 
@@ -62,5 +102,13 @@
     &:first-child {
       width: 940px;
     }
+
+    &:first-child .photo__description {
+      min-height: auto;
+    }
 }
+
+  .photo:first-child .photo__text-wrapper {
+      padding: 25px 20px 9px 27px;
+  }
 }

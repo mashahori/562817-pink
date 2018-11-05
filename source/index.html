@@ -368,8 +368,12 @@
     <section class="index-footer__hidden page-footer">
       <h2 class="visually-hidden">Наши контакты</h2>
       <a class="page-footer__link" href="index.html">
-        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg"
-        width="147" height="41" alt="Логотип приложения для фотографий Pink">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-tablet@1x.jpg">
+          <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg"
+            alt="Логотип приложения для фотографий Pink">
+        </picture>
       </a>
       <ul class="page-footer__social-list social">
         <li class="social__button social__button--twitter">

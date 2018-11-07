@@ -86,7 +86,7 @@
       <div class="main-nav__logo-wrapper">
       <a class="main-nav__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
           <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg"
             alt="Логотип приложения для фотографий Pink">
@@ -275,7 +275,7 @@
               База
               <span class="price__value">1,99 USD</span>
             </th>
-            <th class="price__th">
+            <th class="price__th price__th--hit">
               Стандарт
               <span class="price__value">3,99 USD</span>
             </th>
@@ -289,68 +289,95 @@
               Розовый фильтр
             </td>
             <td class="price__td price__hidden">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Розовый фильтр</span>
               <span class="visually-hidden">Есть</span>
               <svg class="price__svg-yes" width="31" height="21">
                 <use xlink:href="#icon-yes"></use>
               </svg>
+            </div>
             </td>
             <td class="price__td">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Розовый фильтр</span>
               <span class="visually-hidden">Есть</span>
               <svg class="price__svg-yes" width="31" height="21">
                 <use xlink:href="#icon-yes"></use>
               </svg>
+            </div>
             </td>
-            <td class="price__td price__hidden">
+            <td class="price__td">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Розовый фильтр</span>
               <span class="visually-hidden">Есть</span>
               <svg class="price__svg-yes" width="31" height="21">
                 <use xlink:href="#icon-yes"></use>
               </svg>
+            </div>
             </td>
           </tr>
           <tr class="price__tr">
             <td class="price__point">
               Смайлики
             </td>
-            <td class="price__td price__hidden">
+            <td class="price__td">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Смайлики</span>
               <span class="visually-hidden">Нет</span>
               <svg class="price__svg-no" width="27" height="26">
                 <use xlink:href="#icon-no"></use>
               </svg>
+            </div>
             </td>
             <td class="price__td">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Смайлики</span>
               <span class="visually-hidden">Есть</span>
               <svg class="price__svg-yes" width="31" height="21">
                 <use xlink:href="#icon-yes"></use>
               </svg>
+            </div>
             </td>
-            <td class="price__td price__hidden">
+            <td class="price__td">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Смайлики</span>
               <span class="visually-hidden">Есть</span>
               <svg class="price__svg-yes" width="31" height="21">
                 <use xlink:href="#icon-yes"></use>
               </svg>
+            </div>
             </td>
           </tr>
           <tr class="price__tr">
             <td class="price__point">
               Комментарии
             </td>
-            <td class="price__td price__hidden">
+            <td class="price__td">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Комментарии</span>
               <span class="visually-hidden">Нет</span>
               <svg class="price__svg-no" width="27" height="26">
                 <use xlink:href="#icon-no"></use>
               </svg>
+            </div>
             </td>
             <td class="price__td">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Комментарии</span>
               <span class="visually-hidden">Нет</span>
               <svg class="price__svg-no" width="27" height="26">
                 <use xlink:href="#icon-no"></use>
               </svg>
+            </div>
             </td>
-            <td class="price__td price__hidden">
+            <td class="price__td">
+              <div class="price__td-wrapper">
+              <span class="price__point-hidden">Комментарии</span>
               <span class="visually-hidden">Есть</span>
               <svg class="price__svg-yes" width="31" height="21">
                 <use xlink:href="#icon-yes"></use>
               </svg>
+            </div>
             </td>
           </tr>
         </table>
@@ -398,8 +425,12 @@
       </div>
     </div>
       <div class="index-footer__map">
+        <div class="index-footer__map-interactive" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.1684095868145!2d30.3192853!3d59.9390414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1531215381700"
+           style="border:0" allowfullscreen></iframe>
+        </div>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg">
           <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
           <img class="index-footer__map-image" src="img/bg-map-mobile@1x.png" alt="Карта">
         </picture>
@@ -410,7 +441,7 @@
       <h2 class="visually-hidden">Наши контакты</h2>
       <a class="page-footer__link" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
           <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg"
             alt="Логотип приложения для фотографий Pink">
         </picture>

@@ -53,6 +53,16 @@
   line-height: 30px;
   color: @dark-blue;
   font-weight: normal;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus,
+  &:active {
+    border-color: @pink;
+    outline: none;
+  }
 }
 
 .competition__legend {
@@ -87,6 +97,18 @@
     left: 0;
     top: 0;
   }
+}
+
+.competition__label-checkbox:hover::before,
+.competition__label-checkbox:focus::before,
+.competition__label-radio:hover::before,
+.competition__label-radio:focus::before {
+  border-color: #283645;
+}
+
+.competition__label-checkbox:active::before,
+.competition__label-radio:active::before {
+  border-color: @pink;
 }
 
 .competition__label-radio {
@@ -149,6 +171,16 @@
   border-radius: 2px;
   width: 280px;
   margin-bottom: 40px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .competition__required {
@@ -350,36 +382,25 @@
     margin: 0 auto 25px;
     align-items: flex-start;
     position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 62px;
-      width: 62px;
-      background-color: #e5e5e5;
-      top: 0;
-      right: 0;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      background: url("/../../img/icon-phone.svg");
-      top: 20px;
-      right: 20px;
-      z-index: 5;
-    }
-
-    &:last-child::before {
-      background: url("/../../img/icon-mail.svg");
-      width: 18px;
-      height: 14px;
-      top: 22px;
-      right: 24px;
-    }
   }
+
+  .competition__svg-wrapper {
+    height: 62px;
+    width: 62px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .competition__contacts-svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: @pink;
+    margin: 20px auto 20px;
+  }
+
 
   .competition__fieldset--contacts .competition__label {
     padding-left: 20px;

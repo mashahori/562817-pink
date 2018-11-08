@@ -16,19 +16,22 @@
 }
 
 .tools__svg {
-  path {
     fill: rgba(0, 0, 0, 0.3);
-  }
+    path {
+      fill: rgba(0, 0, 0, 0.3);
+    }
 
-  rect {
-    fill: rgba(0, 0, 0, 0.3);
-  }
+    &:hover,
+    &:focus {
+      fill: rgba(0, 0, 0, 0.5);
+      path {
+        fill: rgba(0, 0, 0, 0.5);
+      }
+    }
 }
 
-.tools__item--active {
-  path {
+.tools__item--active svg {
     fill: @pink;
-  }
 }
 
 .tools__hidden {
@@ -69,6 +72,8 @@
   }
 
   .tools__svg {
+    fill: @pink;
+
     path {
       fill: @pink;
     }

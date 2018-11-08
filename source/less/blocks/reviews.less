@@ -67,7 +67,16 @@
   border: 0;
   border-radius: 50%;
   cursor: pointer;
-  background-color: #bec2c7;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &:focus,
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .reviews__toggle--active {
@@ -176,9 +185,20 @@
     height: 27px;
     border-bottom: none;
     border-left: none;
-    border-top: 2px solid rgba(40, 54, 69,0.3);
-    border-right: 2px solid rgba(40, 54, 69,0.3);
+    border-top: 2px solid rgba(40, 54, 69, 0.3);
+    border-right: 2px solid rgba(40, 54, 69, 0.3);
   }
+
+    .reviews__toggle-nav-button:hover::before,
+    .reviews__toggle-nav-button:focus::before {
+      border-top: 2px solid rgba(40, 54, 69, 0.6);
+      border-right: 2px solid rgba(40, 54, 69, 0.6);
+    }
+
+    .reviews__toggle-nav-button:active::before {
+      border-top: 2px solid rgba(40, 54, 69, 0.1);
+      border-right: 2px solid rgba(40, 54, 69, 0.1);
+    }
 
   .reviews__toggle-nav-button--prev::before {
     transform: translateY(-50%) rotate(225deg);

@@ -4,6 +4,13 @@
   background-repeat: no-repeat;
   background-color: #1d2631;
   margin-bottom: 40px;
+  background-size: 700px 462px;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("/../../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-header--photo {
@@ -49,12 +56,29 @@
   background-position: 50% 0;
 }
 
+.page-header--nav-closed .page-header__nav-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--nav-closed .page-header__main-nav,
+.page-header--nav-closed .main-nav__logo-wrapper,
+.page-header--nav-closed .main-nav__toggle {
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+
 
 @media (min-width: @tablet-width) {
   .page-header {
     background-image: url("/../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     margin-bottom: 46px;
+    background-size: 1200px 729px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("/../../img/bg-back-tablet@2x.jpg");
+    background-position: 50% 259px;
   }
 
   .page-header--photo {
@@ -94,7 +118,13 @@
     background-image: url("/../../img/bg-back-desktop@1x.jpg");
     background-position: 50% 0;
     background-repeat: no-repeat;
+    background-size: 2560px 853px;
     margin-bottom: 70px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("/../../img/bg-back-desktop@2x.jpg");
+    background-position: 50% 259px;
   }
 
   .page-header--form {

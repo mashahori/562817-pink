@@ -31,6 +31,17 @@
   border-radius: 30px;
   background: none;
   margin-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    background-color: @pink;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: @pink;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .photo-editor__cancel-photo {
@@ -42,7 +53,19 @@
   padding: 15px 100px 18px;
   border-radius: 30px;
   background: none;
-  margin-bottom: 40px
+  margin-bottom: 40px;
+
+  &:hover,
+  &:focus {
+    border-color: rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    border-color: rgba(40, 54, 69, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    color: #cbced2;
+  }
 }
 
 .photo-editor__range-control {
@@ -65,6 +88,11 @@
   border: 2px solid @pink;
   border-radius: 50%;
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:active {
+    background-color: @pink;
+  }
 }
 
 @media (min-width: @tablet-width) {

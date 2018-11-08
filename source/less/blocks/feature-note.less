@@ -1,36 +1,105 @@
 .feature-note {
   display: none;
-  position: relative;
-  min-height: 346px;
-  padding-left: 310px;
-  // // &::before {
-  // //   content: "";
-  // //   position: absolute;
-  // //   width: 298px;
-  // //   height: 346px;
-  // //   background: url("/../../img/icon-timer.svg");
-  // //   left: 0;
-  // }
 }
 
 @media (min-width: @tablet-width) {
   .feature-note {
     display: block;
+    background-color: #ffffff;
+    padding-top: 95px;
+  }
+
+  .feature-note__wrapper {
+    display: flex;
+  }
+
+  .feature-note__text {
+    width: 296px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .feature-note__title {
+    margin: 0;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    width: 168px;
+    margin-bottom: 10px;
+  }
+
+  .feature-note__hours {
+    display: block;
+    font-size: 96px;
+    line-height: 150px;
+    color: @pink;
+    font-weight: bold;
+    border: 13px solid @pink;
+    border-radius: 50%;
+    padding: 9px 34px 15px;
+    margin-left: 20px;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 89px;
+
+    &::before {
+      top: -105px;
+      left: -60px;
+      content: "";
+      position: absolute;
+      width: 298px;
+      height: 346px;
+      transform: scale(0.8);
+      opacity: 0.1;
+      background: url("/../../img/icon-timer.svg");
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .feature-note {
-    padding-left: 370px;
+    background-color: @gray;
+    padding-bottom: 90px;
+    padding-top: 100px;
   }
-}
 
-.feature-note__title {
-  line-height: 36px;
-  font-size: 30px;
-  font-weight: bold;
-}
+  .feature-note__title {
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    width: auto;
+    padding-top: 22px;
+    margin-bottom: 25px;
+  }
 
-.feature-note__link {
-  color: #d22856;
+  .feature-note__hours {
+    margin-right: 90px;
+    font-size: 120px;
+    line-height: 186px;
+    margin-left: 25px;
+    margin-top: 0;
+    padding: 15px 42px 20px;
+    border: 16px solid @pink;
+
+    &::before {
+      top: -85px;
+      left: -40px;
+      transform: scale(1);
+    }
+  }
+
+  .feature-note__link {
+    color: #d22856;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .feature-note__text {
+    width: 530px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 575px;
+    margin-bottom: 30px;
+  }
 }

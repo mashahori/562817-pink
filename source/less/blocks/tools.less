@@ -1,27 +1,123 @@
 .tools {
   list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 22px;
+  width: 210px;
 }
 
-.tools__item--cropp {
-  background-image: url("/../../img/icon-editor-crop.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.tools__button {
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
-.tools__item--fill {
-  background-image: url("/../../img/icon-editor-fill.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.tools__svg {
+  path {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+
+  rect {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }
 
-.tools__item--contrast {
-  background-image: url("/../../img/icon-editor-contrast.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.tools__item--active {
+  path {
+    fill: @pink;
+  }
+}
+
+.tools__hidden {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .tools__item {
-    display: flex;
+  .tools {
+    flex-direction: column;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 35px;
   }
+
+  .tools__hidden {
+    display: block;
+    width: 202px;
+    margin: 0;
+  }
+
+  .tools__item {
+    width: 255px;
+    display: flex;
+    align-items: top;
+    margin-bottom: 19px;
+    height: 55px;
+  }
+
+  .tools__button {
+    margin-right: 30px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .tools__svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tools__svg {
+    path {
+      fill: @pink;
+    }
+
+    rect {
+      fill: @pink;
+    }
+  }
+
+  .tools__item--contrast .tools__svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tools {
+    margin-bottom: 135px;
+    padding-top: 0;
+    margin-top: -5px;
+  }
+
+  .tools__button {
+    margin-right: 45px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .tools__svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .tools__item {
+    width: 378px;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+
+  .tools__hidden {
+    padding-left: 0;
+    padding-right: 0;
+    width: 288px;
+  }
+
+  .tools__item--contrast .tools__svg {
+    width: 32px;
+    height: 32px;
+  }
+
+
 }

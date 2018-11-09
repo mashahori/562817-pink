@@ -37,6 +37,16 @@
   display: block;
   width: 75px;
   height: 23px;
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
+    fill: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -73,17 +83,18 @@
   height: 4px;
   background-color: #ffffff;
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
 
-  &:hover,
-  &:focus {
+.main-nav__wrapper--closed .main-nav__toggle:hover::before {
     background-color: @pink;
+    box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
   }
 
-  &:active {
+.main-nav__wrapper--closed .main-nav__toggle:active::before {
     background-color: @pink;
     opacity: 0.3;
   }
-}
+
 
 .main-nav__wrapper--opened .main-nav__toggle::before,
 .main-nav__wrapper--opened .main-nav__toggle::after {
@@ -94,17 +105,20 @@
   width: 30px;
   height: 5px;
   background-color: #ffffff;
+}
 
-  &:hover,
-  &:focus {
+.main-nav__wrapper--opened .main-nav__toggle:hover::before,
+.main-nav__wrapper--opened .main-nav__toggle:focus::before,
+.main-nav__wrapper--opened .main-nav__toggle:hover::after,
+.main-nav__wrapper--opened .main-nav__toggle:focus::after {
     background-color: @pink;
   }
 
-  &:active {
+.main-nav__wrapper--opened .main-nav__toggle:active::before,
+.main-nav__wrapper--opened .main-nav__toggle:active::after {
     background-color: @pink;
     opacity: 0.3;
   }
-}
 
 .main-nav__wrapper--opened .main-nav__toggle::before {
   transform: rotate(-45deg);
@@ -151,6 +165,7 @@
     display: block;
     width: 150px;
     height: 41px;
+    fill: #ffffff;
 
     &:hover,
     &:focus {
@@ -213,6 +228,7 @@
     display: block;
     width: 150px;
     height: 41px;
+    fill: #ffffff;
 
     &:hover,
     &:focus {

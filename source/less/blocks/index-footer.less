@@ -21,6 +21,20 @@
   position: relative;
   height: 200px;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("/../../img/bg-triangle-white-footer.svg");
+    right: 0;
+    background-position: 50% 0;
+    z-index: 100;
+    height: 33px;
+    background-size: 100% 33px;
+    background-repeat: no-repeat;
+  }
 }
 
 .index-footer__map-interactive iframe {
@@ -60,6 +74,11 @@
 
   .index-footer__map {
     height: 375px;
+
+    &::before {
+      height: 67px;
+      background-size: 100% 67px;
+    }
   }
 
   .index-footer__map-interactive {
@@ -81,4 +100,9 @@
   .index-footer__map-interactive {
     height: 505px;
   }
+
+  .index-footer__map::before {
+      height: 104px;
+      background-size: 100% 104px;
+    }
 }

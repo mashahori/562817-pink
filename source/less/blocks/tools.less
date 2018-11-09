@@ -16,22 +16,24 @@
 }
 
 .tools__svg {
-    fill: rgba(0, 0, 0, 0.3);
-    path {
-      fill: rgba(0, 0, 0, 0.3);
-    }
+  fill: rgba(0, 0, 0, 0.3);
 
-    &:hover,
-    &:focus {
+  path {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    fill: rgba(0, 0, 0, 0.5);
+
+    path {
       fill: rgba(0, 0, 0, 0.5);
-      path {
-        fill: rgba(0, 0, 0, 0.5);
-      }
     }
+  }
 }
 
 .tools__item--active svg {
-    fill: @pink;
+  fill: @pink;
 }
 
 .tools__hidden {
@@ -69,9 +71,6 @@
   .tools__svg {
     width: 22px;
     height: 22px;
-  }
-
-  .tools__svg {
     fill: @pink;
 
     path {
@@ -123,6 +122,4 @@
     width: 32px;
     height: 32px;
   }
-
-
 }

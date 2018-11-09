@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 200;
-  display: none;
+  // display: none;
   width: 320px;
   background-color: #ffffff;
   padding: 40px 20px 50px;
@@ -40,6 +40,16 @@
   box-sizing: border-box;
   border-radius: 2px;
   width: 280px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

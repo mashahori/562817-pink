@@ -33,6 +33,7 @@
   margin-right: auto;
   width: 320px;
   background-color: #ffffff;
+  position: relative;
 
   .photo__text-wrapper {
     margin: 0 20px;
@@ -47,6 +48,19 @@
 .photo-catalog__link {
   display: block;
   height: 137px;
+}
+
+.photo-catalog__full-title {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @pink;
+  padding: 7px 20px 8px;
+  display: block;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -87,6 +101,11 @@
   }
 }
 
+  .photo-catalog__full-title {
+    top: 55px;
+    z-index: 10;
+  }
+
 @media (min-width: @desktop-width) {
   .photo-catalog {
     margin-bottom: 5px;
@@ -106,5 +125,11 @@
 
   .photo-catalog__item {
     margin-bottom: 54px;
+  }
+
+  .photo-catalog__full-title {
+    top: 50px;
+    right: 130px;
+    z-index: 10;
   }
 }

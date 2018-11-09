@@ -2,6 +2,20 @@
   line-height: 30px;
   background-color: #ffffff;
   padding-bottom: 25px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-size: calc(100% + 30px) auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("/../../img/bg-triangle-white.svg");
+    height: 33px;
+    width: 320px;
+    bottom: -33px;
+    left: 0;
+  }
 }
 
 .reviews__list {
@@ -91,6 +105,12 @@
 @media (min-width: @tablet-width) {
   .reviews {
     padding-bottom: 0;
+
+    &::after {
+      width: 660px;
+      height: 51px;
+      bottom: -81px;
+    }
   }
 
   .reviews__item {
@@ -125,6 +145,14 @@
 @media (min-width: @desktop-width) {
   .reviews {
     padding-top: 185px;
+
+    &::after {
+      width: 100%;
+      height: 105px;
+      bottom: -135px;
+      z-index: 5;
+      background-size: cover;
+    }
   }
 
   .reviews__wrapper {

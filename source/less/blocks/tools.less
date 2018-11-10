@@ -32,6 +32,11 @@
   }
 }
 
+.tools__svg--contrast {
+  width: 32px;
+  height: 32px;
+}
+
 .tools__item--active svg {
   fill: @pink;
 }
@@ -82,9 +87,22 @@
     }
   }
 
+  .tools__svg--fill {
+    width: 24px;
+    height: 22px;
+  }
+
   .tools__item--contrast .tools__svg {
     width: 16px;
     height: 16px;
+  }
+
+  .tools__item--fill .photo-editor__toggle {
+    left: 20px;
+  }
+
+  .tools__item--contrast .photo-editor__toggle {
+    left: 90px;
   }
 }
 
@@ -121,5 +139,13 @@
   .tools__item--contrast .tools__svg {
     width: 32px;
     height: 32px;
+  }
+
+  .tools__item--fill .photo-editor__toggle {
+    left: 245px;
+  }
+
+  .tools__item--contrast .photo-editor__toggle {
+    left: 160px;
   }
 }

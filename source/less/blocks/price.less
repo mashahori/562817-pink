@@ -37,7 +37,7 @@
 }
 
 .price__value {
-  font-weight: 100;
+  font-weight: 300;
   line-height: 30px;
   font-size: 24px;
 }
@@ -122,7 +122,7 @@
     text-transform: none;
     width: 155px;
     padding: 0;
-    height: 45px;
+    height: 43px;
   }
 
   .price__td-wrapper {
@@ -139,21 +139,29 @@
     font-size: 16px;
     padding-left: 35px;
     padding-right: 35px;
-    padding-top: 0;
+    padding-top: 5px;
     padding-bottom: 0;
     width: 25%;
+  }
+
+  .price__th--hit {
+    background-size: 65px 65px;
+    padding-left: 35px;
+
+    &::before {
+      top: 8px;
+      left: 8px;
+    }
   }
 
   .price__svg-yes {
     padding: 0;
   }
 
-  .price__svg-no {
-    transform: scale(0.9);
-  }
-
   .price__value {
     font-size: 18px;
+    margin: 0;
+    padding: 0;
   }
 
   .price__wrapper {
@@ -212,8 +220,5 @@
     margin-top: 0;
     margin-left: 0;
     transform: none;
-  }
-
-  .price__svg-yes {
   }
 }

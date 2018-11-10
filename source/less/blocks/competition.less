@@ -42,6 +42,7 @@
   display: block;
   padding-left: 22px;
   margin-bottom: 8px;
+  line-height: 30px;
 }
 
 .competition__input-text,
@@ -174,7 +175,10 @@
   box-sizing: border-box;
   border-radius: 2px;
   width: 280px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
   &:hover,
   &:focus {
@@ -201,12 +205,17 @@
 .competition__fieldset {
   padding: 0;
   border: 2px solid #e5e5e5;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .competition__fieldset--name {
   position: relative;
-  margin: 0 20px;
   border: none;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   li {
     margin-bottom: 20px;
@@ -220,7 +229,9 @@
 .competition__fieldset--app {
   position: relative;
   padding-top: 34px;
-  margin: 0 20px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   li {
     margin-bottom: 40px;
@@ -232,7 +243,9 @@
 }
 
 .competition__fieldset--contacts {
-  margin: 0 20px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   li {
     margin-bottom: 20px;
@@ -246,7 +259,8 @@
 .competition__fieldset--achievments {
   position: relative;
   padding-top: 40px;
-  margin: 0 20px;
+  margin: 0 auto;
+  width: 280px;
 
   li {
     margin-bottom: 45px;
@@ -259,12 +273,14 @@
 }
 
 .competition__fieldset--message {
-  margin: 0 20px;
   position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .competition__send-wrapper {
-  padding: 20px 20px 15px;
+  padding: 30px 20px 10px;
 }
 
 .competition__required-hidden {
@@ -335,6 +351,12 @@
   .competition__fieldset--app {
     background-color: #ffffff;
     padding: 52px 58px 55px;
+    width: 620px;
+    box-sizing: border-box;
+
+    li {
+      margin-bottom: 38px;
+    }
   }
 
   .competition__fieldset--contacts {
@@ -383,6 +405,9 @@
   .competition__fieldset--achievments {
     background-color: #ffffff;
     padding: 52px 58px 49px;
+    width: 620px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .competition__fieldset--contacts .competition__item {
@@ -413,7 +438,7 @@
 
   .competition__fieldset--contacts .competition__label {
     padding-left: 20px;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .competition__input-contacts {
@@ -432,14 +457,17 @@
     order: 5;
     display: flex;
     justify-content: space-between;
-    padding-top: 35px;
+    padding-top: 45px;
     padding-bottom: 50px;
     align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 620px;
   }
 
   .competition__send-form {
     width: 300px;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -477,7 +505,9 @@
 
   .competition__fieldset--contacts {
     order: 2;
-    padding: 43px 58px 13px;
+    padding: 43px 58px 10px;
+    width: 940px;
+    box-sizing: border-box;
   }
 
   .competition__contacts-wrapper {
@@ -487,6 +517,8 @@
   .competition__fieldset--achievments {
     order: 3;
     padding: 52px 8px 13px 58px;
+    width: 940px;
+    box-sizing: border-box;
   }
 
   .competition__send-wrapper {
@@ -513,6 +545,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: 0;
   }
 
   .competition__fieldset--achievments .competition__item {
@@ -520,10 +553,14 @@
 
     &:nth-child(1) {
       order: 1;
+      margin-right: 22px;
+      width: 260px;
     }
 
     &:nth-child(2) {
       order: 4;
+      width: 260px;
+      margin-right: 22px;
     }
 
     &:nth-child(3) {
@@ -561,7 +598,7 @@
   }
 
   .competition__fieldset--message {
-    padding: 43px 58px 38px;
+    padding: 43px 58px;
   }
 
   .competition__textarea {
@@ -572,12 +609,12 @@
   .competition__required-hidden {
     display: inline;
   }
-}
 
   .competition__achievments-wrapper {
     flex-wrap: wrap;
-    width: 940px;
+    max-width: 100%;
   }
+}
 
 @media (max-width: @mobile-only) {
   .competition__fieldset {

@@ -1,11 +1,11 @@
 .info {
   background-color: #ffffff;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .info__ask {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
@@ -38,14 +38,26 @@
   font-weight: bold;
   font-size: 18px;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .info__contacts {
   color: #d22856;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 24px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -85,7 +97,7 @@
   }
 
   .info__title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 
@@ -95,12 +107,13 @@
     line-height: 60px;
     padding-left: 230px;
     padding-right: 230px;
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 
   .info__list {
     align-items: flex-start;
-    width: 870px;
+    width: 880px;
+    margin-bottom: 20px;
   }
 
   .info__title {
@@ -109,5 +122,14 @@
 
   .info__item:nth-child(2) {
     order: 2;
+    margin-bottom: 0;
+  }
+
+  .info__item:first-child {
+    margin-bottom: 0;
+  }
+
+  .info__item:last-child {
+    margin-bottom: 0;
   }
 }

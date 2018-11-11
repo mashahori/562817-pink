@@ -29,6 +29,16 @@
   border: 3px solid #ffffff;
   border-radius: 40px;
   margin-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: @pink;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download-app__list {
@@ -43,6 +53,12 @@
 }
 
 .download-app__item {
+  height: 56px;
+  width: 47px;
+}
+
+.download-app__icon {
+  display: block;
   height: 56px;
   width: 47px;
 }
@@ -123,7 +139,7 @@
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
-    margin-left: 58px;
+    margin-left: 55px;
     width: 188px;
     margin-bottom: 30px;
   }
@@ -160,6 +176,9 @@
 
   .download-app__link {
     margin-bottom: 67px;
+    font-size: 21px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   .download-app__list {

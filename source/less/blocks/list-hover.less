@@ -19,12 +19,18 @@
   font-size: 18px;
   line-height: 32px;
   text-decoration: none;
-}
+  background-color: transparent;
 
-// @media (min-width: @tablet-width) {
-//   .list-hover {
-//   }
-// }
+  &[href]:hover,
+  &[href]:focus {
+    color: @pink;
+  }
+
+  &:active {
+    color: @pink;
+    opacity: 0.3;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .list-hover {
@@ -32,12 +38,17 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 22px;
+    padding-top: 30px;
   }
 
   .list-hover__item-link {
     border: none;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: none;
+    line-height: 18px;
+  }
+
+  .list-hover__item--active {
+    border-bottom: 2px solid #ffffff;
   }
 }

@@ -2,6 +2,7 @@
   line-height: 30px;
   background-color: #ffffff;
   padding-bottom: 25px;
+  position: relative;
 }
 
 .reviews__list {
@@ -14,8 +15,8 @@
   color: #000000;
   font-size: 18px;
   font-style: normal;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 13px;
 }
 
 .reviews__hidden-note {
@@ -40,40 +41,6 @@
 
 .reviews__text {
   margin: 0;
-}
-
-.reviews__toggle-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  height: 10px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.reviews__toggle {
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 0;
-  width: 5px;
-  height: 5px;
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #bec2c7;
-}
-
-.reviews__toggle--active {
-  box-shadow: 0 0 0 3px #283645;
-  cursor: default;
-  background-color: transparent;
 }
 
 .reviews__toggle-nav {
@@ -108,10 +75,6 @@
     line-height: 30px;
     margin-bottom: 33px;
   }
-
-  .reviews__toggle-list {
-    margin-bottom: 30px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -133,17 +96,13 @@
     width: 79px;
     height: 63px;
     top: -110px;
-    left: 435px;;
+    left: 435px;
   }
 
   .reviews__item {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .reviews__toggle-list {
-    display: none;
   }
 
   .reviews__toggle-nav {
@@ -176,8 +135,19 @@
     height: 27px;
     border-bottom: none;
     border-left: none;
-    border-top: 2px solid rgba(40, 54, 69,0.3);
-    border-right: 2px solid rgba(40, 54, 69,0.3);
+    border-top: 2px solid rgba(40, 54, 69, 0.3);
+    border-right: 2px solid rgba(40, 54, 69, 0.3);
+  }
+
+  .reviews__toggle-nav-button:hover::before,
+  .reviews__toggle-nav-button:focus::before {
+    border-top: 2px solid rgba(40, 54, 69, 0.6);
+    border-right: 2px solid rgba(40, 54, 69, 0.6);
+  }
+
+  .reviews__toggle-nav-button:active::before {
+    border-top: 2px solid rgba(40, 54, 69, 0.1);
+    border-right: 2px solid rgba(40, 54, 69, 0.1);
   }
 
   .reviews__toggle-nav-button--prev::before {

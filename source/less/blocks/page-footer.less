@@ -14,9 +14,39 @@
   justify-content: space-between;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__logo--mobile {
+  display: block;
+  width: 148px;
+  height: 41px;
+}
+
+.page-footer__logo--mobile:hover,
+.page-footer__logo--mobile:focus {
+  fill: @pink;
+}
+
+.page-footer__logo--mobile:active {
+  opacity: 0.3;
+}
+
 .page-footer__copyright-svg {
-  path {
-    fill: @pink;
+  display: block;
+  width: 27px;
+  height: 34px;
+  fill: @pink;
+
+  &:hover,
+  &:focus {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
   }
 }
 
@@ -26,23 +56,27 @@
     justify-content: space-between;
     align-items: baseline;
     flex-direction: row;
-    padding-top: 35px;
+    padding-top: 30px;
     height: 51px;
   }
 
   .page-footer__link {
-    margin-right: 75px;
+    margin-right: 68px;
     display: block;
     height: 40px;
     width: 150px;
+    margin-top: 5px;
   }
 
-  .page-footer__social-list {
-    margin-right: 95px;
+  .page-footer__copyright {
+    width: 130px;
+    margin-left: auto;
   }
 
   .page-footer__copyright-link {
     display: block;
+    width: 27px;
+    height: 34px;
   }
 
   .page-footer__copyright-svg {
@@ -54,7 +88,7 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    padding-top: 65px;
+    padding-top: 70px;
     justify-content: flex-start;
     align-items: center;
   }
@@ -66,12 +100,32 @@
   }
 
   .page-footer__link {
-    margin-right: 220px;
+    margin-right: 225px;
     height: 51px;
+    margin-top: 0;
   }
 
   .page-footer__social-list {
     margin: 0;
+  }
+
+  .page-footer__logo--mobile {
+    display: none;
+  }
+
+  .page-footer__logo--desktop {
+    display: block;
+    width: 148px;
+    height: 41px;
+  }
+
+  .page-footer__logo--desktop:hover,
+  .page-footer__logo--desktop:focus {
+    fill: @pink;
+  }
+
+  .page-footer__logo--desktop:active {
+    opacity: 0.3;
   }
 }
 
@@ -81,7 +135,7 @@
   }
 
   .page-footer__link {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   .page-footer__social-list {

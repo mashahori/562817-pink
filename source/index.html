@@ -6,99 +6,35 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <svg style="display: none;">
-    <symbol id="icon-yes">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px"
-        height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
-         xml:space="preserve">
-        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-      </svg>
-    </symbol>
-    <symbol id="icon-no">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px"
-        height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752"
-         xml:space="preserve">
-        <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-      </svg>
-    </symbol>
-    <symbol id="icon-youtube">
-      <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px"
-        height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96"
-        xml:space="preserve">
-          <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,
-            0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
-      </svg>
-    </symbol>
-    <symbol id="icon-twitter">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px"
-        height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
-        xml:space="preserve">
-        <g id="W6EeEF_1_">
-          <g>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,
-              0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,
-              1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,
-              1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,
-              0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,
-              14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,
-              4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,
-              0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,
-              5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,
-              2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
-          </g>
-        </g>
-      </svg>
-    </symbol>
-    <symbol id="icon-facebook">
-      <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px"
-        height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944"
-        xml:space="preserve">
-          <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,
-            0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,
-            6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786
-            C5.765,5.07,5.75,3.709,6.275,3.357z"/>
-      </svg>
-    </symbol>
-    <symbol id="htmlacademy">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-        <path
-         d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
-          36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7
-           11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8
-            5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1
-             17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-      </svg>
-    </symbol>
-  </svg>
-  <header class="page-header">
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="page-header page-header--nav-closed">
     <div class="page-header__nav-wrapper">
     <nav class="page-header__main-nav main-nav">
       <div class="main-nav__logo-wrapper">
       <a class="main-nav__logo">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg"
-            alt="Логотип приложения для фотографий Pink">
-        </picture>
+        <svg class="main-nav__svg main-nav__svg--desktop">
+          <use xlink:href="#logo-pink-white-desktop"></use>
+        </svg>
+        <svg class="main-nav__svg main-nav__svg--tablet">
+          <use xlink:href="#logo-pink-white-tablet"></use>
+        </svg>
+        <svg class="main-nav__svg main-nav__svg--mobile">
+          <use xlink:href="#logo-pink-white-mobile"></use>
+        </svg>
       </a>
     </div>
-      <div class="main-nav__wrapper main-nav__wrapper--opened main-nav__wrapper--nojs">
+      <div class="main-nav__wrapper main-nav__wrapper--closed main-nav__wrapper--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Кнопка меню</span>
       </button>
       <ul class="main-nav__list list-hover">
-        <li class="list-hover__item list-hover__item--item-active">
+        <li class="list-hover__item list-hover__item--active">
           <a class="list-hover__item-link">Главная</a>
         </li>
         <li class="list-hover__item">
@@ -124,18 +60,24 @@
           <p class="download-app__text-hidden">
             Взгляните на жизнь иначе!
           </p>
-      <a class="download-app__link" href="#">
+      <a class="download-app__link" href="https://www.apple.com/ru/itunes/download/">
         Скачать приложение
       </a>
       <ul class="download-app__list">
         <li class="download-app__item download-app__item--apple">
-          <a href="#"><span class="visually-hidden">Apple</span></a>
+          <a class="download-app__icon" href="https://www.apple.com/ru/itunes/download/">
+            <span class="visually-hidden">Apple</span>
+          </a>
         </li>
         <li class="download-app__item download-app__item--android">
-          <a href="#"><span class="visually-hidden">Android</span></a>
+          <a class="download-app__icon" href="https://play.google.com/store?hl=ru">
+            <span class="visually-hidden">Android</span>
+          </a>
         </li>
         <li class="download-app__item download-app__item--windows">
-          <a href="#"><span class="visually-hidden">Windows</span></a>
+          <a class="download-app__icon" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+            <span class="visually-hidden">Windows</span>
+          </a>
         </li>
       </ul>
       <p class="download-app__description">
@@ -186,11 +128,11 @@
         <div class="feature-note__wrapper">
       <span class="feature-note__hours">24</span>
       <div class="feature-note__note-wrapper">
-      <h2 class="feature-note__title">Эффект на 24 часа!</h2>
+      <h2 class="feature-note__title">Эффект на&nbsp;24 часа!</h2>
       <p class="feature-note__text">
         Британские ученые провели исследования
-        и доказали, что положительный эффект
-        от использования приложения длится
+        и доказали, что&nbsp;положительный эффект
+        от&nbsp;использования приложения длится
         целые сутки!
       </p>
       <a class="feature-note__link" href="#">Узнать больше об исследовании</a>
@@ -217,39 +159,37 @@
           </li>
           <li class="reviews__item">
             <blockquote class="reviews__comment">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__hidden-note">25 лет, водитель трамвая</p>
+              <cite class="reviews__author">Иван Помидоров</cite>
+              <p class="reviews__hidden-note">30 лет, геолог</p>
               <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть
-                на привычные серые вещи! А еще я познакомился со своей будущей
-                женой в комментариях к выложенной фотографии!»
+                В общем эта штука испортила всю мою жизнь.
+                  Сначала моя жена переписывалась с кем-то в комментариях,
+                  а потом взяла и ушла от меня :-(
               </p>
             </blockquote>
           </li>
           <li class="reviews__item">
             <blockquote class="reviews__comment">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__hidden-note">25 лет, водитель трамвая</p>
+              <cite class="reviews__author">Василий Степанович</cite>
+              <p class="reviews__hidden-note">80 лет, пенсионер</p>
               <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть
-                на привычные серые вещи! А еще я познакомился со своей будущей
-                женой в комментариях к выложенной фотографии!»
+                А куда тут тыкать то надо? Ничё не понял!
               </p>
             </blockquote>
           </li>
         </ul>
-        <ul class="reviews__toggle-list">
+        <ul class="reviews__toggle-list toggles">
           <li>
-          <button class="reviews__toggle reviews__toggle--active" type="button">
+          <button class="toggles__item toggles__item--active" type="button">
             <span class="visually-hidden">1</span>
           </button>
-          <li>
-          <button class="reviews__toggle" type="button">
+          </li><li>
+          <button class="toggles__item" type="button">
             <span class="visually-hidden">2</span>
           </button>
           </li>
           <li>
-          <button class="reviews__toggle" type="button">
+          <button class="toggles__item" type="button">
             <span class="visually-hidden">3</span>
           </button>
         </li>
@@ -263,6 +203,7 @@
           </button>
       </div>
     </div>
+  </div>
     </section>
     <section class="price">
       <h2 class="visually-hidden">Стоимость приложения</h2>
@@ -292,7 +233,7 @@
               <div class="price__td-wrapper">
               <span class="price__point-hidden">Розовый фильтр</span>
               <span class="visually-hidden">Есть</span>
-              <svg class="price__svg-yes" width="31" height="21">
+              <svg class="price__svg-yes">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
@@ -382,18 +323,18 @@
           </tr>
         </table>
       </div>
-      <ul class="reviews__toggle-list reviews__toggle-list--table">
+      <ul class="price__toggle-list toggles toggles--table">
         <li>
-        <button class="reviews__toggle" type="button">
+        <button class="toggles__item" type="button">
           <span class="visually-hidden">1</span>
         </button>
-        <li>
-        <button class="reviews__toggle  reviews__toggle--active" type="button">
+        </li><li>
+        <button class="toggles__item toggles__item--active" type="button">
           <span class="visually-hidden">2</span>
         </button>
         </li>
         <li>
-        <button class="reviews__toggle" type="button">
+        <button class="toggles__item" type="button">
           <span class="visually-hidden">3</span>
         </button>
       </li>
@@ -407,18 +348,18 @@
       <div class="site-container">
       <div class="index-footer__info info">
         <p class="info__ask">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class='info__list'>
+        <ul class="info__list">
           <li class="info__item">
             <b class="info__title">Звоните:</b>
-            <span class="info__contacts">+7 (812) 555-66-66</span>
+            <a class="info__contacts" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="info__item">
             <b class="info__title">Пишите:</b>
-            <span class="info__contacts">mail@htmlacademy.ru</span>
+            <a class="info__contacts" href="#">mail@htmlacademy.ru</a>
           </li>
           <li class="info__item">
             <b class="info__title">Приезжайте в гости:</b>
-            <span class="info__contacts">ул. Большая Конюшенная, 19/8</span>
+            <a class="info__contacts" href="#">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
       </div>
@@ -426,31 +367,33 @@
     </div>
       <div class="index-footer__map">
         <div class="index-footer__map-interactive" id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.1684095868145!2d30.3192853!3d59.9390414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1531215381700"
-           style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.1684095868145!2d30.3192853!3d59.9390414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1531215381700" style="border:0" allowfullscreen=""></iframe>
         </div>
         <picture>
-          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-          <img class="index-footer__map-image" src="img/bg-map-mobile@1x.png" alt="Карта">
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.jpg 2x,
+            img/bg-map-desktop@1x.jpg 1x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@2x.jpg 2x,
+            img/bg-map-tablet@1x.jpg 1x">
+          <img class="index-footer__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
         </picture>
       </div>
     </section>
     <div class="site-container">
     <section class="index-footer__hidden page-footer">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <a class="page-footer__link" href="index.html">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg"
-            alt="Логотип приложения для фотографий Pink">
-        </picture>
+      <a class="page-footer__link">
+        <svg class="page-footer__logo page-footer__logo--desktop">
+          <use xlink:href="#logo-pink-blue-desktop"></use>
+        </svg>
+        <svg class="page-footer__logo page-footer__logo--mobile">
+          <use xlink:href="#logo-pink-blue-mobile"></use>
+        </svg>
       </a>
       <ul class="page-footer__social-list social">
         <li class="social__button social__button--twitter">
           <span class="visually-hidden">Twitter</span>
           <a href="#">
-            <svg class="social__button--twitter-svg" width="18" height="14">
+            <svg class="social__svg social__svg--twitter" width="18" height="14">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
@@ -458,7 +401,7 @@
         <li class="social__button social__button--facebook">
           <span class="visually-hidden">Facebook</span>
           <a href="#">
-            <svg class="social__button--facebook-svg" width="9" height="18">
+            <svg class="social__svg social__svg--facebook" width="9" height="18">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
@@ -466,7 +409,7 @@
         <li class="social__button social__button--youtube">
           <span class="visually-hidden">Youtube</span>
           <a href="#">
-            <svg class="social__button--youtube-svg" width="15" height="13">
+            <svg class="social__svg social__svg--youtube" width="15" height="13">
               <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
@@ -474,16 +417,17 @@
       </ul>
       <p class="page-footer__copyright htmlacademy-copyright">
         Разработано
-        <a class="page-footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34">
-            <use xlink:href="#htmlacademy"></use>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__copyright-svg">
+            <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </p>
     </section>
   </div>
   </footer>
-  <script src='js/script.js'></script>
+  <script src="js/polyfill.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,12 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="/fonts/opensans.woff2">
+  <link rel="preload" href="/fonts/opensans.woff">
+  <link rel="preload" href="/fonts/opensansbold.woff2">
+  <link rel="preload" href="/fonts/opensansbold.woff">
+  <link rel="preload" href="/fonts/opensanslight.woff2">
+  <link rel="preload" href="/fonts/opensanslight.woff">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -370,11 +376,18 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.1684095868145!2d30.3192853!3d59.9390414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1531215381700" style="border:0" allowfullscreen=""></iframe>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.webp 2x,
+            img/bg-map-desktop@1x.webp 1x">
           <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.jpg 2x,
             img/bg-map-desktop@1x.jpg 1x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@2x.webp 2x,
+            img/bg-map-tablet@1x.webp 1x">
           <source media="(min-width: 660px)" srcset="img/bg-map-tablet@2x.jpg 2x,
             img/bg-map-tablet@1x.jpg 1x">
-          <img class="index-footer__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+          <source type="image/webp" srcset="img/bg-map-mobile@2x.webp 2x,
+            img/bg-map-mobile@1x.webp 1x">
+          <img class="index-footer__map-image" src="img/bg-map-mobile@1x.png"
+            srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
         </picture>
       </div>
     </section>

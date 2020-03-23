@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+const {src, task}= require('gulp');
 var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var rename = require("gulp-rename");
@@ -14,6 +15,7 @@ var svgstore = require("gulp-svgstore");
 var include = require("posthtml-include");
 var posthtml = require("gulp-posthtml");
 var del = require("del");
+var deploy = require('gulp-gh-pages');
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -98,3 +100,4 @@ gulp.task("clean", function() {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
+gulp.task('deploy', gulp.series("build"), () => src('./build/**/*').pipe(deploy()));
